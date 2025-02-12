@@ -1,12 +1,11 @@
 /* -------------------- CSS BY NAME -------------------------------------- */
 
 
-
 /* -------------------- IMPORTED FONTS -------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-/*-------------------- CSS REST ---------------------------------------------------*/
+/*-------------------- CSS RESET ---------------------------------------------------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -76,6 +75,231 @@ table {
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
+body {
+    min-width: 450px;
+    background:#484FB7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+h1 {
+    display: flex;
+    font-family: "Kavoon", sans-serif;
+    font-size: 3em;
+    background: #6B8FE7;
+    color: #ffffff;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 65px 40px 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header div + div {
+    display: flex;
+    background: #D9526F;
+    color: #ffffff;
+    font-style: italic;
+    justify-content: center;
+    left: 2%;
+    right: 2%;
+    top: 95px;
+    padding-top: 45px;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    z-index: -1;
+}
+
+header div p {
+    max-width: 19ch;
+    white-space: nowrap;
+    text-overflow: hidden;
+    overflow: hidden;
+}
+
+nav h2 {
+    font-family: "Inter", sans-serif;
+    color: #1E1E1E;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    background: #E9BB57;
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    visibility: hidden;
+    height: 1px;
+}
+nav {
+    margin-bottom: 98px;
+}
+
+h2 {
+    font-family: "Kavoon", sans-serif;
+    color: #ffffff;
+    font-size: 2em;
+    margin-left: 15px;
+}
+
+#our-services {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "1on1coaching"
+    "personalDevelopment"
+    "careerCoaching"
+    "relationshipCoaching"
+    "groupCoaching"
+    "supportiveCommunity"
+    "focusedSessions"
+    "workshopsSeminars"
+    "interactiveLearning"
+    "onlineCourses"
+    "flexibleLearning"
+}
+
+.one-on-one-coaching h3 {
+    grid-area: 1on1coaching;
+    color: #E9BB57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: -8px;
+    padding: 0;
+}
+
+.personal-development {
+    grid-area: personalDevelopment;
+}
+
+.career-coaching {
+    grid-area: careerCoaching;
+}
+
+.relationship-coaching {
+    grid-area: relationshipCoaching;
+}
+
+.personal-development, .career-coaching, .relationship-coaching, .supportive-community, .focused-sessions, .interactive-learning, .flexible-learning {
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 16px 20px 0;
+    padding-bottom: 25px;
+}
+ .personal-development img, .career-coaching img, .relationship-coaching img, .supportive-community img, .focused-sessions img, .interactive-learning img, .flexible-learning img {
+    padding: 25px 25px 10px;
+ }
+
+h4 {
+    color: #484FB7;
+    font-size: 1.15em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+h4, h4 + p {
+    margin-left: 24px;
+    max-width: 85%;
+}
+
+.group-coaching h3 {
+    grid-area: groupCoaching;
+    color: #E9BB57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+}
+
+.supportive-community {
+    grid-area: supportiveCommunity;
+}
+
+.focused-sessions {
+    grid-area: focusedSessions;
+}
+
+.workshops h3 {
+    grid-area: workshopsSeminars;
+    color: #E9BB57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+}
+
+.interactive-learning {
+    grid-area: interactiveLearning;
+}
+
+.online-courses h3 {
+    grid-area: onlineCourses;
+    color: #E9BB57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+}
+
+.flexible-learning {
+    grid-area: flexibleLearning;
+}
+
+#why-choose-us {
+    background: #D9526F;
+    padding: 20px 0;
+    margin-top: -95px;
+}
+
+#why-choose-us ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-evenly;
+}
+
+#why-choose-us ul li {
+    font-size: 1.25em;
+    color: #1E1E1E;
+    font-weight: bold;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.item1 {
+    background: #4CA7C0;
+    border-radius: 15px;
+    width: 34%;
+    margin-bottom: 20px;
+}
+
+.item2 {
+    background: #6B8FE7;
+    border-radius: 15px;
+    width: 34%;
+    margin-bottom: 20px;
+}
+
+.item3 {
+    background: #E9BB57;
+    border-radius: 15px;
+    width: 34%;
+}
+
+.item4 {
+    background: #ffffff;
+    border-radius: 15px;
+    width: 34%;
+}
+
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
@@ -84,3 +308,4 @@ table {
 
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
