@@ -300,6 +300,17 @@ h4, h4 + p {
     width: 34%;
 }
 
+#pricing h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.price-category h3 {
+    color: #E9BB57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
