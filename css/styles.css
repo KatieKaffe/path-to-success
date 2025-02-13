@@ -275,7 +275,7 @@ h4, h4 + p {
     font-size: 1.25em;
     color: #1E1E1E;
     font-weight: bold;
-    padding: 30px 20px;
+    padding: 32px 20px;
     text-align: center;
 }
 
@@ -547,6 +547,10 @@ footer p + p:hover {
         padding-top: 7px;
         margin: 0 25px;
         font-size: .9em;
+    }
+
+    nav ul li:hover {
+        color: #ffffff;
     }
 
     h1 {
