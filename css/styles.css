@@ -117,7 +117,6 @@ header div + div {
 header div p {
     max-width: 19ch;
     white-space: nowrap;
-    text-overflow: hidden;
     overflow: hidden;
 }
 
@@ -161,7 +160,7 @@ h2 {
     display: grid;
     gap: 20px;
     grid-template-areas:
-    "1on1coaching"
+    "oneononeCoaching"
     "personalDevelopment"
     "careerCoaching"
     "relationshipCoaching"
@@ -175,7 +174,7 @@ h2 {
 }
 
 .one-on-one-coaching h3 {
-    grid-area: 1on1coaching;
+    grid-area: oneononeCoaching;
     color: #E9BB57;
     font-size: 1.5em;
     font-weight: bold;
@@ -345,7 +344,7 @@ table tr td {
     padding-top: 15px;
 }
 
-#take-first-step h2 + p {
+#take-first-step div > p:not(.schedule-button) {
     color: #ffffff;
     margin: 12px 15px 10px;
 }
@@ -405,8 +404,8 @@ footer p + p:hover {
 
     .one-on-one-coaching {
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
         row-gap: 20px;
     }
 
@@ -432,8 +431,8 @@ footer p + p:hover {
 
     .group-coaching {
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
     }
 
     .group-coaching h3 {
@@ -463,8 +462,8 @@ footer p + p:hover {
 
     #pricing {
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
     }
 
     #pricing h2 {
@@ -490,6 +489,10 @@ footer p + p:hover {
     .price-category4 {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
+    }
+
+    #take-first-step {
+        margin-top: -40px;
     }
     
     #take-first-step h2 {
@@ -580,8 +583,8 @@ footer p + p:hover {
 
        #our-services {
         display: grid;
-        grid-template-columns: 4;
-        grid-template-rows: 2;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
         column-gap: 0;
     }
 
@@ -653,8 +656,8 @@ footer p + p:hover {
 
     #pricing {
         display: grid;
-        grid-template-columns: 4;
-        grid-template-rows: 2;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
     }
 
     #pricing h2 {
@@ -683,6 +686,7 @@ footer p + p:hover {
     }
 
     #pricing h3 {
+        font-size: 1.35em;
     }
 
     table tr th{
@@ -691,11 +695,17 @@ footer p + p:hover {
 
     table tr td {
         padding: 9px 12px;
+        font-size: 95%;
+    }
+
+    #take-first-step {
+        margin-top: 10px;
     }
 
     #take-first-step div > p:not(.schedule-button) {
         max-width: 50%;
         color: #ffffff;
+        margin: 0;
     }
 
     .schedule-button {
